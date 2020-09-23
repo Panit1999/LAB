@@ -6,7 +6,7 @@ void Menu();
 float Area(const float R); //วงกลม
 int Area(const int w,int l,int h); //ปริมาตร
 float Area(const float L,const float W); //สี่เหลี่ยม
-double Area(const double based1,double based2, double h);
+double Area(const double based1,double based2, double h); //คางหมู
 
 int main(){
 	char C;
@@ -45,6 +45,11 @@ int main(){
 			cout << setprecision(2) << Area(l,h)<< endl;
 		
 		}
+		else if(C=='5'){
+			Flag = false;
+		
+		}else
+			cout << "not process";
 	}while (Flag);
 	cout << "Exit Program"<< endl;
 	return 0;
